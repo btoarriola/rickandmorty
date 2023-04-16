@@ -1,4 +1,5 @@
 import imageRickMorty from "./img/rick-morty.png";
+import credencial from "./img/Uv Anverso.png";
 
 import "./App.css";
 import { useState } from "react";
@@ -17,7 +18,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="title">Rick & Morty </h1>
+        <h1>Rick & Morty </h1>
+        <h1 className="title">by btoarriola</h1>
+        <p className="info">pase el mouse para ver detalles</p>
+        <div className="infoContainer">
+          Heriberto Arriola Peztña<br/>
+          zs20006737@estudiantes.uv.mx <br/>
+          <img src={credencial} id="info-img"/>
+
+        </div>
         {characters ? (
           <Characters characters={characters} setCharacters={setCharacters} />
         ) : (
