@@ -13,8 +13,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - name: CI
-        run: npm ci
+      - name: npm install
+        run: npm install
 #      - name: Test
 #        run: |
 #          npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
