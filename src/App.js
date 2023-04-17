@@ -24,7 +24,7 @@ function App() {
         <div className="infoContainer">
           Heriberto Arriola Peztña<br/>
           zs20006737@estudiantes.uv.mx <br/>
-          <img src={credencial} id="info-img"/>
+          <img src={credencial} alt="credencial" id="info-img"/>
 
         </div>
         {characters ? (
